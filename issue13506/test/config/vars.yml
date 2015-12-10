@@ -1,0 +1,7 @@
+---
+
+# comma-separated, ordered list of host:base_port pairs
+hosts:
+- { name: "server2.example.com", port: 9000 }
+
+

@@ -1,0 +1,6 @@
+---
+
+- name: Stop nodes
+  shell: "/path/to/bin/stopNodes.sh --for-host {{ item.name }}"
+  with_items: hosts
+
