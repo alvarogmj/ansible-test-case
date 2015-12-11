@@ -3,5 +3,5 @@
 - include_vars: ../{{ customer }}/config/vars.yml
 
 - include: appctl.yml action=stop
-  when: "{{ 'not_found' != hostvars[inventory_hostname]['app_info_' ~ customer]['version'] }}"
+  when: "{{ 'not_found' != hostvars[inventory_hostname][customer]['version'] }}"
 
